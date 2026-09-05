@@ -136,31 +136,36 @@
 </section>
 
 <section class="section" id="testimonials">
-  <div class="section-head">
-    <span class="kicker">Stories, not scripts</span>
-    <h2>What graduates say — with the offer to back it up.</h2>
-  </div>
-<div class="video-grid">
-    <div class="video-testimonial">
+  <div class="testimonial-stack" id="testimonialStack">
+    <div class="stack-card">
+      <span class="stack-card-hint mono">Drag to see next ↔</span>
       <video controls preload="metadata" poster="assets/img/testimonial-1-poster.jpg" playsinline>
         <source src="assets/video/testimonial-1.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="video-testimonial">
+    <div class="stack-card">
+      <span class="stack-card-hint mono">Drag to see next ↔</span>
       <video controls preload="metadata" poster="assets/img/testimonial-2-poster.jpg" playsinline>
         <source src="assets/video/testimonial-2.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="video-testimonial">
+    <div class="stack-card">
+      <span class="stack-card-hint mono">Drag to see next ↔</span>
       <video controls preload="metadata" poster="assets/img/testimonial-3-poster.jpg" playsinline>
         <source src="assets/video/testimonial-3.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="video-testimonial">
+    <div class="stack-card">
+      <span class="stack-card-hint mono">Drag to see next ↔</span>
       <video controls preload="metadata" poster="assets/img/testimonial-4-poster.jpg" playsinline>
         <source src="assets/video/testimonial-4.mp4" type="video/mp4">
       </video>
     </div>
+  </div>
+  <div class="stack-controls">
+    <button class="stack-btn" id="stackPrev" aria-label="Previous testimonial">‹</button>
+    <div class="stack-dots" id="stackDots"></div>
+    <button class="stack-btn" id="stackNext" aria-label="Next testimonial">›</button>
   </div>
 </section>
 

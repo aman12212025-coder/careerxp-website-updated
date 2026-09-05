@@ -461,7 +461,10 @@ nav a.active::after{right:0;}
 }
 .stack-card.is-front .stack-card-hint{opacity:1;}
 
-.stack-controls{display:flex; align-items:center; justify-content:center; gap:18px;}
+.stack-controls{
+  display:flex; align-items:center; justify-content:center; gap:18px;
+  position:relative; z-index:200; margin-top:60px;
+}
 .stack-btn{
   width:38px; height:38px; border-radius:50%; border:1px solid var(--line);
   background:var(--panel2); color:var(--paper); font-size:18px; line-height:1;

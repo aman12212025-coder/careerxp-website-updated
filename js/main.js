@@ -61,14 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ledgerTrack.innerHTML = CAREERXP_LEDGER.map(ticketHtml).join('') + CAREERXP_LEDGER.map(ticketHtml).join('');
   }
 
-  const ledgerCount = document.getElementById('ledger-count');
-  if (ledgerCount && typeof CAREERXP_STATS !== 'undefined') {
-    let count = CAREERXP_STATS.totalHires;
-    const render = () => { ledgerCount.textContent = count.toLocaleString() + ' total'; };
-    render();
-    setInterval(() => { count += 1; render(); }, 4000);
-  }
-
+ 
   /* ---------- Full ledger grid (placements page) ---------- */
   const ledgerGrid = document.getElementById('ledger-grid');
   if (ledgerGrid && typeof CAREERXP_LEDGER !== 'undefined') {

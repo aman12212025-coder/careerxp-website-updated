@@ -279,4 +279,22 @@ document.addEventListener('DOMContentLoaded', () => {
     render();
   }
 
+  /* ---------- Hiring-partner feedback quotes ("Read more" toggle) ---------- */
+  const feedbackQuotes = document.querySelectorAll('.feedback-quote');
+  if (feedbackQuotes.length) {
+    feedbackQuotes.forEach(quote => {
+      if (quote.scrollHeight > quote.clientHeight + 2) {
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'feedback-toggle';
+        toggle.textContent = 'Read more';
+        toggle.addEventListener('click', () => {
+          const expanded = quote.classList.toggle('is-expanded');
+          toggle.textContent = expanded ? 'Read less' : 'Read more';
+        });
+        quote.after(toggle);
+      }
+    });
+  }
+
 });

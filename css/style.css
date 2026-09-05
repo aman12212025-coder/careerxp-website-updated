@@ -541,3 +541,45 @@ nav a.active::after{right:0;}
 
 .page-hero p strong{color:var(--paper); font-weight:700;}
 .page-hero p em{color:var(--orange); font-style:normal; font-weight:600;}
+
+/* ==========================================================================
+   23. HIRING PARTNER FEEDBACK CARDS
+   ========================================================================== */
+.feedback-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.feedback-card{
+  background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:28px; display:flex; flex-direction:column; position:relative;
+  transition:border-color .25s, transform .25s;
+}
+.feedback-card:hover{border-color:rgba(232,92,43,0.4); transform:translateY(-3px);}
+.feedback-card-head{display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:14px;}
+.feedback-avatar{
+  width:44px; height:44px; border-radius:10px; flex-shrink:0;
+  background:linear-gradient(135deg, var(--orange), var(--rust));
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Space Grotesk'; font-weight:700; font-size:14px; color:var(--ink);
+}
+.feedback-company h4{font-size:16px; font-weight:600; line-height:1.25;}
+.feedback-stars{color:var(--orange); font-size:13px; margin-top:6px; letter-spacing:2px;}
+.feedback-quote-mark{font-family:'Space Grotesk'; font-size:40px; color:var(--line); line-height:1; flex-shrink:0;}
+.feedback-quote{
+  color:var(--paper-dim); font-size:14px; line-height:1.65; font-style:italic; margin-top:16px;
+  display:-webkit-box; -webkit-line-clamp:5; -webkit-box-orient:vertical; overflow:hidden;
+}
+.feedback-quote.is-expanded{-webkit-line-clamp:unset; overflow:visible;}
+.feedback-toggle{
+  background:none; border:none; color:var(--orange); font-size:13px; font-weight:600;
+  padding:10px 0 0; cursor:pointer; text-align:left; align-self:flex-start;
+}
+.feedback-toggle:hover{color:var(--paper);}
+.feedback-reviewer{
+  display:flex; align-items:center; gap:12px; margin-top:20px; padding-top:20px;
+  border-top:1px solid var(--line);
+}
+.feedback-reviewer .avatar{width:40px; height:40px; font-size:13px; margin-bottom:0;}
+.feedback-reviewer h5{font-size:14px; font-weight:600;}
+.feedback-reviewer .role{font-family:'IBM Plex Mono'; font-size:11px; color:var(--paper-dim); margin-top:2px;}
+
+@media (max-width:900px){
+  .feedback-grid{grid-template-columns:1fr;}
+}

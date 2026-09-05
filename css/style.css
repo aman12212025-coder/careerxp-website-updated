@@ -348,6 +348,7 @@ footer.footer-simple .legal-line a:hover{color:var(--orange);}
 
 /* 16. RESPONSIVE --------------------------------------------------------------- */
 @media (max-width:900px){
+   header{backdrop-filter:none; background:var(--ink);}
   nav ul{
     display:none; position:fixed; top:65px; left:0; right:0; bottom:0;
     background:var(--ink); flex-direction:column; align-items:flex-start;
@@ -384,6 +385,9 @@ footer.footer-simple .legal-line a:hover{color:var(--orange);}
    17. NAV REDESIGN — active page indicator
    ========================================================================== */
 nav ul{position:relative;}
+@media (max-width:900px){
+  nav ul.is-open{position:fixed;}
+}
 nav a{position:relative; padding-bottom:4px;}
 nav a::after{
   content:''; position:absolute; left:0; right:100%; bottom:-2px; height:2px;

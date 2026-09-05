@@ -3,18 +3,16 @@
    ========================================================================== */
 
 const CAREERXP_LEDGER = [
-  ["A.", "Full-Stack Engineer", "FinEdge Labs", "₹9.2L"],
-  ["B.", "Data Analyst", "QuickCart Logistics", "₹7.4L"],
-  ["C.", "Associate PM", "Nimbus Retail", "₹11.0L"],
-  ["D.", "Backend Engineer", "PayStack India", "₹8.6L"],
-  ["E.", "ML Engineer", "Verta Health", "₹12.4L"],
-  ["F.", "Frontend Engineer", "Litmus Cloud", "₹7.9L"],
-  ["G.", "Data Scientist", "Orbit Analytics", "₹10.5L"],
-  ["H.", "Product Analyst", "Fablink", "₹8.1L"],
-  ["I.", "UX Designer", "Crestline Tech", "₹7.6L"],
-  ["J.", "DevOps Engineer", "Meridian Systems", "₹9.8L"],
-  ["K.", "QA Engineer", "Nimbus Retail", "₹6.9L"],
-  ["L.", "Data Engineer", "Orbit Analytics", "₹10.1L"],
+  ["Societe Generale", "Analyst", "Bangalore", "₹5.43L"],
+  ["Park Controls", "Software Engineer", "Bangalore", "₹4.2LPA"],
+  ["Park Controls", "Embedded Engineer", "Bangalore", "₹4.2LPA"],
+  ["Park Controls", "AI/ML Engineer", "Bangalore", "₹4.2LPA"],
+  ["Smart Food Safe", "Business Analyst", "Bangalore", "₹4.2LPA"],
+  ["Xccelera", "AI Developer/Trainee", "Noida", "₹5LPA"],
+  ["Stackfusion", "Deep Learning/AI", "Pune", "₹6LPA"],
+  ["Bitcot", "Jr. React Js/Jr. Node Js", "Chennai", "₹3LPA"],
+  ["GoComet", "Full Stack, AI first SDET", "Bangalore", "₹12LPA"],
+  ["Moengage", "Data Operations", "Vijayawada", "₹3LPA"],
 ];
 
 const CAREERXP_PARTNERS = [

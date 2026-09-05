@@ -349,10 +349,10 @@ footer.footer-simple .legal-line a:hover{color:var(--orange);}
 /* 16. RESPONSIVE --------------------------------------------------------------- */
 @media (max-width:900px){
   nav ul{
-    display:none; position:fixed; top:65px; left:0; right:0; bottom:0;
+    display:none; position:fixed; top:65px; left:0; right:0; height:calc(100vh - 65px);
     background:var(--ink); flex-direction:column; align-items:flex-start;
     padding:32px 6%; gap:8px; overflow-y:auto; border-top:1px solid var(--line);
-  }
+}
   nav ul.is-open{display:flex;}
   nav ul li{width:100%; padding:14px 0; border-bottom:1px solid var(--line);}
   nav a{font-size:16px;}
